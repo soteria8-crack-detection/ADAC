@@ -1,4 +1,4 @@
-# 이어드림 스쿨 3기 스타트업 연계 프로젝트
+# ADAC : Anomaly detection for infrastructure and Aging Comparison system
 ### DS 3팀 - 시간의 흐름에 따른 노후 인프라시설 건축물의 외관과 내부 Crack 감지
 - Project Peroid : 23.11.08~23.12.15
 - Team : 맘에들었조
