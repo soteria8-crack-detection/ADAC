@@ -193,8 +193,22 @@ ADAC
 $ pip install -r requirements.txt
 ```
 
-4. 2번에서 만든 가상환경 접속 후 ../ADAC/demo.py 실행
+4. ADAC/data/video 폴더 내에 비디오 넣기
+- 비디오명은 video_01.MP4와 video_02.MP4 외 다른 파일명 사용 불가
+- video_01.MP4 : 과거 촬영 영상
+- video_02.MP4 : 최신 촬영 영상
 
+5. 2번에서 만든 가상환경 접속 후 ../ADAC/demo.py 실행
+
+6. 최종 결과물은 ADAC/results 폴더 내 생성됨
+- final_report.txt : video_01 대비 video_02 이상징후 변화량이 관측된 보고서
+- 보고서 해석 방법
+```
+video_02 20s : reinforcement 100.0% 변화 | white_bleeding 변화 없음 | red_bleeding 변화 없음
+video_02 20초에서 video_01 대비 철근노출 면적이 100% 넓어지고, white bledding 및 red bleeding에서는 변화 없음 혹은 관측되지 않음
+```
+- pred_result_video_01.mp4 : video_01에서 관측된 이상징후를 바탕으로 재구성한 영상
+- pred_result_video_02.mp4 : video_02에서 관측된 이상징후를 바탕으로 재구성한 영상
 
 
 ***
