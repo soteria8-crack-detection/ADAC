@@ -206,7 +206,8 @@ $ pip install -r requirements.txt
 ```
 video_02 20s : reinforcement 100.0% 변화 | white_bleeding 변화 없음 | red_bleeding 변화 없음
 ```
-> video_02 20초에서 video_01 대비 철근노출 면적이 100% 넓어지고, white 및 red bleeding에서는 변화 없음 혹은 관측되지 않음
+> video_02 20초에서 video_01 대비 철근노출 면적이 100% 넓어지고, 
+> white 및 red bleeding에서는 변화 없음 혹은 관측되지 않음
 - pred_result_video_01.mp4 : video_01에서 관측된 이상징후를 바탕으로 재구성한 영상
 - pred_result_video_02.mp4 : video_02에서 관측된 이상징후를 바탕으로 재구성한 영상
 
