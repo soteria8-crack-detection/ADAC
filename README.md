@@ -194,7 +194,7 @@ $ pip install -r requirements.txt
 ```
 
 4. ADAC/data/video 폴더 내에 비디오 넣기
-- 비디오명은 video_01.MP4와 video_02.MP4 외 다른 파일명 사용 불가
+- 비디오명은 video_01.MP4와 video_02.MP4 외 다른 이름 사용 불가
 - video_01.MP4 : 과거 촬영 영상
 - video_02.MP4 : 최신 촬영 영상
 
