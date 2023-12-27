@@ -121,7 +121,7 @@ Image Retrieval을 통해 동일한 Instance를 추적한 뒤, 면적 비교량�
 ***
 ## 개발문서
 
-파일구조
+- 프로젝트 구조
 ```
 ADAC
 ├─ data
@@ -180,23 +180,20 @@ ADAC
             └─ ...
 ```
 
-------.py 설명 추가 ------------- 
-<!--Table
-|Category|Description|
-|:--:|:--:|
-|yolo|cell2|
-|frame_matching|cell2|
-|demo.py|Cell2|
-|results.txt|Cell2|
--->
-## 사용하는 방법
-1. CUDA & CuDNN, Python, Pytorch를 차례로 설치해야 합니다. 새로운 가상환경에서 진행하는 것을 권장합니다.
-2. requierments.txt 다운로드 후 아래의 명령어를 입력합니다.
+## 실행 방법
+1. 터미널로 서버에 conda 설치하기
+
+2. conda 가상환경 설치하기
+- python 3.9.x
+- [CUDA 버전에 맞는 Pytorch 설치](https://pytorch.org/get-started/previous-versions/)
+
+3. requirements.txt 설치하기
 >requirements : you need to install our requirment packages
 ```python
 $ pip install -r requirements.txt
 ```
-3. ------.py 설명 추가 ------------- 
+
+4. 2번에서 만든 가상환경 접속 후 ../ADAC/demo.py 실행
 
 
 
