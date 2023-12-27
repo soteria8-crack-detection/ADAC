@@ -121,6 +121,65 @@ Image Retrieval을 통해 동일한 Instance를 추적한 뒤, 면적 비교량�
 ***
 ## 개발문서
 
+파일구조
+```
+ADAC
+├─ data
+│  ├─ best.pt
+│  └─ video
+│     ├─ video_01.MP4   # 기준이 되는 비디오
+│     └─ video_02.MP4   # 최신 비디오
+├─ YOLO
+│  ├─ main.py
+│  └─ utils
+│     ├─ convert_inference_to_video.py
+│     ├─ ultralytics.py
+│     └─ video_slicing.py
+├─ frame_matching
+│  ├─ main.py
+│  └─ utils
+│     ├─ customdataset.py
+│     ├─ image_search.py
+│     └─ latent_features.py
+├─ comparative_analysis
+│  ├─ main.py
+│  └─ utils
+│     └─ comparing_the_inference_results.py
+├─ demo.py              
+├─ requirements.txt
+├─ dataset              # demo.py 실행 시 아래 폴더 내에 자동으로 파일 생성
+│  ├─ image_extraction
+│  │  ├─ video_01
+│  │  │  ├─ frame_seconds.jpg
+│  │  │  └─ ...
+│  │  └─ video_02
+│  │     ├─ frame_seconds.jpg
+│  │     └─ ...
+│  └─ result_txt
+│     ├─ _image_info.txt
+│     ├─ _mask_info_01.txt
+│     ├─ _mask_info_02.txt
+│     └─ _pair_info.txt
+├─ results              # 최종 결과물 저장되는 폴더
+│  ├─ final_report.txt
+│  ├─ pred_result_video_01.mp4
+│  └─ pred_result_video_02.mp4
+└─ runs                 # 모델을 학습시키면 자동으로 생기는 폴더
+   └─ segment
+      ├─ inference_video_01
+      │  ├─ frame_seconds.jpg
+      │  ├─ ...
+      │  └─ labels
+      │     ├─ frame_seconds.txt
+      │     └─ ...
+      └─ inference_video_02
+         ├─ frame_seconds.jpg
+         ├─ ...
+         └─ labels
+            ├─ frame_seconds.txt
+            └─ ...
+```
+
 ------.py 설명 추가 ------------- 
 <!--Table
 |Category|Description|
