@@ -251,4 +251,7 @@ pyrightconfig.json
 .history
 .ionide
 
+# Igonre empty folder
+*.gitkeep
+
 # End of https://www.toptal.com/developers/gitignore/api/python,linux,macos,jupyternotebooks,visualstudiocode
